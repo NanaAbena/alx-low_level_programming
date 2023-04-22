@@ -9,13 +9,8 @@
 int main(void)
 {
 	char l;
-
-	for (lr = 'z'; l >= 'a'; l--)
-	{
-		putchar(l);
-	}
-
-	putchar('\n');
-
-	return (0);
+for (lr = 'z'; l >= 'a'; l--)
+putchar(l);
+putchar('\n');
+return (0);
 }
