@@ -8,9 +8,18 @@
  */
 int main(void)
 {
-	char l;
-for (lr = 'z'; l >= 'a'; l--)
-putchar(l);
-putchar('\n');
-return (0);
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
