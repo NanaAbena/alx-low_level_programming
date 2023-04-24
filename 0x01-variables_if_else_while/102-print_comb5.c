@@ -9,23 +9,23 @@
  */
 int main(void)
 {
-	int i, j;
+	int m, n;
 
-	for (i = 0; i <= 99; i++)
+	for (m = 0; i < 100; m++)
 	{
-		for (j = i; j <= 99; j++)
+		for (n = 0; n < 100; n++)
 		{
-			if (i != j)
+			if (m < n)
 			{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
-				putchar('\t');
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
-				if (i != 98 || j != 99)
+				putchar((m / 10) + 48);
+				putchar((m % 10) + 48);
+				putchar(' ');
+				putchar((n / 10) + 48);
+				putchar((n % 10) + 48);
+				if (m != 98 || n != 99)
 				{
 					putchar(',');
-					putchar('\t');
+					putchar(' ');
 				}
 			}
 		}
