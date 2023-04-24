@@ -21,8 +21,8 @@ int main(void)
 				{
 					if ((r != 56) || (u != 57))
 					{
-						putchat(',');
-						putchar('');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
