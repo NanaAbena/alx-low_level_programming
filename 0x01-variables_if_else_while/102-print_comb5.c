@@ -11,7 +11,7 @@ int main(void)
 {
 	int m, n;
 
-	for (m = 0; i < 100; m++)
+	for (m = 0; m < 100; m++)
 	{
 		for (n = 0; n < 100; n++)
 		{
