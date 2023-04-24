@@ -1,20 +1,17 @@
 #include <unistd.h>
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
- * Return: Exit failute or exit success
+ * Return: 1 for success
  */
-#include <unistd.h>
-#include <stdlib.h>
 
 int main(void)
 {
-	if (write(STDERR_FILENO, "and that piece of art is useful\" - "
-			  "Dora Korpar, 2015-10-19\n", 58) != 58)
-	{
-		return (EXIT_FAILURE);
-	}
+	char *dora = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	return (EXIT_SUCCESS);
+	write(STDERR_FILENO, dora, 59);
+
+	return (1);
 }
