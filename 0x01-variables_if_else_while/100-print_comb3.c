@@ -8,19 +8,23 @@
  */
 int main(void)
 {
-	int i, j;
+	int r, u;
 
-	for (i = 0; i <= 9; i++)
+	for (r = 48; r <= 57; r++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		for (u = 49; u <= 57; u++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-
-			if (i != 8 || j != 9)
+			if (u > r)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(r);
+				putchar(u);
+				{
+					if ((r != 56) || (u != 57))
+					{
+						putchat(',');
+						putchar('');
+					}
+				}
 			}
 		}
 	}
