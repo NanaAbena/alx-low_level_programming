@@ -6,6 +6,8 @@
  *
  * Return: Always 0.
  */
+#include "main.h"
+#include <stdio.h>
 int main(void)
 {
     char c;
